@@ -47,6 +47,6 @@ Edit MidiConfig.py to select the interface you are using and set the MIDI - Spar
 Then simply 
 
 ```
-python MidiControl
+python MidiControl.py
 ```
 
