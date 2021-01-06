@@ -12,11 +12,11 @@ It is configurable via a text file to select which midi messages send which comm
 
 ## Example setup with USB midi device (Novation Launchkey 25)
 
-![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/digrams/Setup1.jpg)
+![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/diagrams/Setup1.jpg)
 
 ## Example setup with DIN MIDI device (Behringer FCB1010)
 
-![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/digrams/Setup2.jpg)
+![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/diagrams/Setup2.jpg)
 
 ## Instructions
 
@@ -61,6 +61,11 @@ so this example was done on a Windows PC and scp/ssh to Pi Zero
   unzip MIDI-Spark-Control-main.zip
   
   cd MIDI-Spark-Control-main/src
+  
+Or:
+  git clone http://github.com/paulhamsh/MIDI-Spark-Control
+  cd MIDI-Spark_control/src
+  
 
 ```
 
