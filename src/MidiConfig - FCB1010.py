@@ -11,8 +11,8 @@ else:
  
 # PUT ADDRESS OF YOUR SPARK HERE - OR "" TO MAKE A SEARCH
 
-my_spark = "08:EB:ED:4E:47:07"
-#my_spark=""
+#my_spark = "08:EB:ED:4E:47:07"
+my_spark=""
 
 
 # PRESETS TO USE
