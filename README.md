@@ -10,8 +10,11 @@ If you use a USB-MIDI cable then DIN connected MIDI devices can also work.
 
 It is configurable via a text file to select which midi messages send which commands to the Spark.
 
+## Example setup with USB midi device (Novation Launchkey 25)
 
 ![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/digrams/Setup1.jpg)
+
+## Example setup with DIN MIDI device (Behringer FCB1010)
 
 ![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/digrams/Setup2.jpg)
 
