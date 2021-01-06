@@ -1,5 +1,7 @@
 # MIDI-Spark-Control
 
+Based on the great work here: https://github.com/jrnelson90/tinderboxpedal
+
 ## Control your Positive Grid Spark amp from a MIDI controller (via a Raspberry Pi)
 
 This allows you to use a MIDI controller to send presets, change presets and change parameters (gain, volume, tone etc) on the Spark amp. It connects to the amp via bluetooth so can't be used at the same time as the App.
