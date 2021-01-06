@@ -73,6 +73,8 @@ zip file download:
 
 Edit MidiConfig.py to select the MIDI interface you are using, the address of your Spark (or leave empty to search for it) and set the MIDI - Spark mapping. The sample one has some mappings for the Launchkey 25 and the FCB1010 to show how it is done.
 
+To find the address of your Spark Amp, I suggest downloading 'BluetoothCL' and it will provide that.
+
 Then simply 
 
 ```
