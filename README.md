@@ -41,26 +41,27 @@ sudo raspi-config nonint do_boot_behaviour B2
 You need the following installed:
 
 ```
-sudo apt-get install libbluetooth-dev
-python3 -m pip install pybluez
+  sudo apt-get install libbluetooth-dev
+  python3 -m pip install pybluez
+
+And find the IP address of your Pi
+
+  ifconfig
 ```
 
 And get this code and install it:
 
 ```
-Download as zip file from github and store in a relevant directory
-Change directory to where the zip file is
+Download as zip file from github - best not on the Pi if a Pi Zero as that is slow for internet browsing 
+so this example was done on a Windows PC and scp/ssh to Pi Zero
 
-
-Unzip
+  cd Downloads
+  scp MIDI-Spark-Control-main.zip pi@xxx.xxx.xxx.xxx:~
+  ssh pi@xxx.xxx.xxx.xxx
   unzip MIDI-Spark-Control-main.zip
   
-Rename MIDI-Spark-Control-main to MIDI-Spark-Control
-  rn MIDI-Spark-Control-main MIDI-Spark-Control
+  cd MIDI-Spark-Control-main/src
 
-Go to the right directory
-  cd MIDI-Spark-Control
-  cd src
 ```
 
 Edit MidiConfig.py to select the interface you are using and set the MIDI - Spark mapping.
@@ -68,6 +69,6 @@ Edit MidiConfig.py to select the interface you are using and set the MIDI - Spar
 Then simply 
 
 ```
-python MidiControl.py
+python3 MidiControl.py
 ```
 
