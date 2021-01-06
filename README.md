@@ -19,6 +19,10 @@ Get a Raspberry Pi with bluetooth (Pi 4 and Pi Zero W, I think the Pi 3 Model B 
 
 Prepare the Raspberry Pi - load the SD card with Pi Os, boot, set up a password, wifi etc
 
+The code is dependent on pygame but that is installed by default on a Raspberry Pi.
+
+(Note - this code also works with Windows)
+
 (If you want to set it up to run SSH and not start into the GUI:
 
 ```
