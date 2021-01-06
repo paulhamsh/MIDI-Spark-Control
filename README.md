@@ -49,27 +49,29 @@ And find the IP address of your Pi
   ifconfig
 ```
 
-And get this code and install it:
+And get this code and install it - either clone from github or download the zip (but not a Pi Zero W because web browsing is slow)
+
+git clone:
 
 ```
-Download as zip file from github - best not on the Pi if a Pi Zero as that is slow for internet browsing 
-so this example was done on a Windows PC and scp/ssh to Pi Zero
+  git clone http://github.com/paulhamsh/MIDI-Spark-Control
+  cd MIDI-Spark_control/src
 
+```
+
+zip file download:
+
+```
   cd Downloads
   scp MIDI-Spark-Control-main.zip pi@xxx.xxx.xxx.xxx:~
   ssh pi@xxx.xxx.xxx.xxx
   unzip MIDI-Spark-Control-main.zip
   
   cd MIDI-Spark-Control-main/src
-  
-Or:
-  git clone http://github.com/paulhamsh/MIDI-Spark-Control
-  cd MIDI-Spark_control/src
-  
+```  
 
-```
 
-Edit MidiConfig.py to select the interface you are using and set the MIDI - Spark mapping.
+Edit MidiConfig.py to select the MIDI interface you are using, the address of your Spark (or leave empty to search for it) and set the MIDI - Spark mapping. The sample one has some mappings for the Launchkey 25 and the FCB1010 to show how it is done.
 
 Then simply 
 
