@@ -48,7 +48,10 @@ python3 -m pip install pybluez
 And get this code and install it:
 
 ```
-Download as zip file from github
+Download as zip file from github and store in a relevant directory
+Change directory to where the zip file is
+
+
 Unzip
   unzip MIDI-Spark-Control-main.zip
   
