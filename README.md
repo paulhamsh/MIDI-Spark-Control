@@ -48,7 +48,16 @@ python3 -m pip install pybluez
 And get this code and install it:
 
 ```
+Download as zip file from github
+Unzip
+  unzip MIDI-Spark-Control-main.zip
+  
+Rename MIDI-Spark-Control-main to MIDI-Spark-Control
+  rn MIDI-Spark-Control-main MIDI-Spark-Control
 
+Go to the right directory
+  cd MIDI-Spark-Control
+  cd src
 ```
 
 Edit MidiConfig.py to select the interface you are using and set the MIDI - Spark mapping.
