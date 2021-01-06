@@ -11,9 +11,9 @@ If you use a USB-MIDI cable then DIN connected MIDI devices can also work.
 It is configurable via a text file to select which midi messages send which commands to the Spark.
 
 
-![Spark Setups](diagrams/Setup1.jpg)
+![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/digrams/Setup1.jpg)
 
-![Spark Setups](diagrams/Setup2.jpg)
+![Spark Setups](https://github.com/paulhamsh/MIDI-Spark-Control/blob/main/digrams/Setup2.jpg)
 
 ## Instructions
 
