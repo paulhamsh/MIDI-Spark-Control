@@ -5,11 +5,9 @@ from sys import platform
 if platform == "win32":
     # for Windows
     midi_device_name = b'Launchkey MIDI'
-    #midi_device_name = b'UM1-SX MIDI 1'
 else:
     #for Raspberry Pi
     midi_device_name = b'Launchkey MK2 25 MIDI 1'
-    #midi_device_name = b'UM1-SX MIDI 1'
  
 # PUT ADDRESS OF YOUR SPARK HERE - OR "" TO MAKE A SEARCH
 

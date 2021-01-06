@@ -4,12 +4,10 @@ from sys import platform
 
 if platform == "win32":
     # for Windows
-    midi_device_name = b'Launchkey MIDI'
-    #midi_device_name = b'UM1-SX MIDI 1'
+    midi_device_name = b'UM1-SX MIDI 1'
 else:
     #for Raspberry Pi
-    midi_device_name = b'Launchkey MK2 25 MIDI 1'
-    #midi_device_name = b'UM1-SX MIDI 1'
+    midi_device_name = b'UM1-SX MIDI 1'
  
 # PUT ADDRESS OF YOUR SPARK HERE - OR "" TO MAKE A SEARCH
 
@@ -73,7 +71,10 @@ spark_presets = {"Silver Ship":		        preset1,
 
 # THE MIDI MAP
 
-midi_map = {"NoteOn-40":    ["HardwarePreset", 0],
+midi_map = {
+# For Launchkey 25
+    
+            "NoteOn-40":    ["HardwarePreset", 0],
             "NoteOn-41":    ["HardwarePreset", 1],
             "NoteOn-42":    ["HardwarePreset", 2],
             "NoteOn-43":    ["HardwarePreset", 3],
@@ -83,14 +84,14 @@ midi_map = {"NoteOn-40":    ["HardwarePreset", 0],
             "NoteOn-50":    ["ChangeEffect", "Amp", "AC Boost"],
             "NoteOn-51":    ["ChangeEffect", "Amp", "OrangeAD30"],
             
-            "CC-21":        ["ChangeParam", "Amp", 0],       # Gain
-            "CC-22":        ["ChangeParam", "Amp", 3],       # Bass
-            "CC-23":        ["ChangeParam", "Amp", 2],       # Mid
-            "CC-24":        ["ChangeParam", "Amp", 1],       # Treble
-            "CC-25":        ["ChangeParam", "Amp", 4],       # Master
-            "CC-26":        ["ChangeParam", "Mod", 0],       # Mod
-            "CC-27":        ["ChangeParam", "Delay", 0],     # Delay
-            "CC-28":        ["ChangeParam", "Reverb", 0],    # Reverb
+#            "CC-21":        ["ChangeParam", "Amp", 0],       # Gain
+#            "CC-22":        ["ChangeParam", "Amp", 3],       # Bass
+#            "CC-23":        ["ChangeParam", "Amp", 2],       # Mid
+#            "CC-24":        ["ChangeParam", "Amp", 1],       # Treble
+#            "CC-25":        ["ChangeParam", "Amp", 4],       # Master
+#            "CC-26":        ["ChangeParam", "Mod", 0],       # Mod
+#            "CC-27":        ["ChangeParam", "Delay", 0],     # Delay
+#            "CC-28":        ["ChangeParam", "Reverb", 0],    # Reverb
 
             "NoteOn-36":    ["EffectOnOff", "Drive", "On"],
             "NoteOn-37":    ["EffectOnOff", "Drive", "Off"],
@@ -100,6 +101,21 @@ midi_map = {"NoteOn-40":    ["HardwarePreset", 0],
             "NoteOn-44":    ["ChangePreset","Silver Ship"],
             "NoteOn-45":    ["ChangePreset","Sweet Memory"],
             "NoteOn-46":    ["ChangePreset","Spooky Melody"],
-            "NoteOn-47":    ["ChangePreset","Fuzzy Jam"]
+            "NoteOn-47":    ["ChangePreset","Fuzzy Jam"],
+            
+# For FCB 1010
+            
+            "PgmChg-0":     ["HardwarePreset", 0],
+            "PgmChg-1":     ["HardwarePreset", 1],
+            "PgmChg-2":     ["HardwarePreset", 2],
+            "PgmChg-3":     ["HardwarePreset", 3],
+
+            "PgmChg-5":     ["ChangeEffect", "Amp", "RolandJC120"],
+            "PgmChg-6":     ["ChangeEffect", "Amp", "Twin"],
+            "PgmChg-7":     ["ChangeEffect", "Amp", "AC Boost"],
+            "PgmChg-8":     ["ChangeEffect", "Amp", "OrangeAD30"],
+
+            "CC-27":        ["ChangeParam", "Amp", 0],     # Gain
+            "CC-7":         ["ChangeParam", "Amp", 4],     # Master
             }
 
