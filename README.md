@@ -43,11 +43,18 @@ You need the following installed:
 ```
   sudo apt-get install libbluetooth-dev
   python3 -m pip install pybluez
-
+```
 And find the IP address of your Pi
 
+```
   ifconfig
 ```
+And you may want to turn wlan power save off
+
+```
+sudo iw wlan0 set power_save off
+```
+
 
 And get this code and install it - either clone from github or download the zip (but not a Pi Zero W because web browsing is slow)
 
