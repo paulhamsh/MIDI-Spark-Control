@@ -21,6 +21,7 @@ class SparkComms:
 
     # functions to connect, send and receive serial or bluetooth
     def connect(self, name=""):
+        address=""
         if name =="":
             if self.comms_type == "serial":
                 name = "COM7"
@@ -33,8 +34,12 @@ class SparkComms:
                     print("  {} - {}".format(addr, bt_name))
                     if bt_name == "Spark 40 Audio":
                         address = addr
+                if address=="":
+                    print("Couldn't find Spark")
+                    quit()
             elif self.comms_type == "bt_socket":
                 print ("Sorry, with unix sockets you need the bt address")
+                quit()
         else:
             address = name
             
@@ -51,6 +56,7 @@ class SparkComms:
             print ("Serial connected successfully")
         else:
             print ("Type of comms needs to be serial, bt_socket or bluetooth")
+            quit()
             
     def send_it(self, dat):
         if self.comms_type == "bt_socket" or self.comms_type =="bluetooth":

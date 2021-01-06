@@ -140,12 +140,15 @@ if errors > 0:
     
 print ("Trying to connect to Spark")
 
-#comms = SparkComms("bt_socket")
-# below for Raspberry Pi
-#comms = SparkComms("bluetooth")
-comms = SparkComms("bt_socket")
-comms.connect(my_spark)
-
+if platform == "win32":
+    #for Windows
+    comms = SparkComms("bt_socket")
+    comms.connect(my_spark)
+else:
+    #for Raspberry Pi
+    comms = SparkComms("bluetooth")
+    comms.connect(my_spark)
+    
 # for later
 reader = SparkReadMessage()
 
